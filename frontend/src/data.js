@@ -123,6 +123,11 @@ export const PARTNERS = [
     { name: "Cargill", logo: "/logos/cargill.png" },
     { name: "Bunge", logo: "/logos/bunge.png" },
     { name: "FVB — Faculdade Vilas Boas", logo: "/logos/fvb.png" },
+    { name: "Construtora Padilha", logo: "/logos/padilha.jpg" },
+    { name: "FAMUTUM — Faculdade de Nova Mutum", logo: "/logos/famutum.jpg" },
+    { name: "Construtora Diniz", logo: "/logos/diniz.jpg" },
+    { name: "Equilíbrio Florestal", logo: "/logos/equilibrio.jpg" },
+    { name: "Tec Fly", logo: "/logos/tecfly.jpg" },
 ];
 
 export const CHAPTERS = [
