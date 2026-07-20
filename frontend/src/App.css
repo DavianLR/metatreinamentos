@@ -1,34 +1,182 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
+/* Additional custom styles for META site */
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #0f0f10;
+.App {
+    position: relative;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background: #FFFFFF;
+}
+
+/* Custom cursor dot when hovering interactive elements */
+button, a { cursor: pointer; }
+
+/* Yellow underline effect for nav links */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 6px 0;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #F4C400;
+    transition: width 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Training card zoom */
+.tr-card-img {
+    transition: transform 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.tr-card:hover .tr-card-img {
+    transform: scale(1.08);
+}
+
+/* Service card hover */
+.srv-card {
+    transition: transform 0.4s ease, border-color 0.3s ease, box-shadow 0.4s ease;
+}
+.srv-card:hover {
+    transform: translateY(-6px);
+    border-color: #F4C400;
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.25);
+}
+
+/* Primary yellow CTA */
+.btn-yellow {
+    background: #F4C400;
+    color: #111111;
+    padding: 18px 34px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 2px solid #F4C400;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    gap: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.btn-yellow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px -10px rgba(244,196,0,0.6);
 }
 
-.App-link {
-    color: #61dafb;
+.btn-ghost {
+    background: transparent;
+    color: #FFFFFF;
+    padding: 16px 28px;
+    border: 1px solid rgba(255,255,255,0.4);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+.btn-ghost:hover {
+    border-color: #F4C400;
+    background: rgba(244,196,0,0.08);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.btn-green {
+    background: #1F5B3A;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.btn-green:hover {
+    background: #F4C400;
+    color: #111111;
+    transform: translateY(-2px);
+}
+
+/* Section index label */
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #F4C400;
+}
+.section-label::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: #F4C400;
+}
+
+/* Training card cover */
+.nr-card {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: #111111;
+    border: 1px solid #1e1e1e;
+}
+.nr-card-meta {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-family: 'Oswald', sans-serif;
+    color: #F4C400;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 2;
+}
+.nr-card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #F4C400;
+    color: #111111;
+    padding: 14px 16px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    z-index: 2;
+}
+.nr-card-big {
+    position: absolute;
+    left: 12px;
+    top: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 76px;
+    line-height: 0.9;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    z-index: 2;
+    mix-blend-mode: difference;
+}
+
+/* Chapter big numeral */
+.chapter-numeral {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(120px, 20vw, 260px);
+    line-height: 0.85;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #F4C400;
+    letter-spacing: -0.05em;
 }
