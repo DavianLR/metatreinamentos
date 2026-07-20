@@ -74,7 +74,7 @@ export default function Numbers() {
                         className="lg:col-span-5 relative aspect-[4/5] overflow-hidden"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+                            src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1200&q=80"
                             alt="Profissional com EPI"
                             className="absolute inset-0 w-full h-full object-cover"
                             loading="lazy"

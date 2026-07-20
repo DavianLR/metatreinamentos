@@ -56,7 +56,7 @@ export default function Hero() {
             {/* Content */}
             <motion.div
                 style={{ opacity }}
-                className="relative z-20 h-full flex flex-col justify-end pb-28 lg:pb-32"
+                className="relative z-20 h-full flex flex-col justify-end pt-24 pb-24 lg:pb-28"
             >
                 <div className="max-w-[1440px] mx-auto w-full px-6 lg:px-12">
                     <AnimatePresence mode="wait">
@@ -78,13 +78,16 @@ export default function Hero() {
                                     exit: { y: -10, opacity: 0 },
                                 }}
                                 transition={{ duration: 0.6, ease: [0.65, 0, 0.35, 1] }}
-                                className="font-mono uppercase tracking-[0.3em] text-[11px] text-[#F4C400] mb-6 flex items-center gap-3"
+                                className="font-mono uppercase tracking-[0.3em] text-[11px] text-[#F4C400] mb-5 flex items-center gap-3"
                             >
                                 <span className="w-8 h-[1px] bg-[#F4C400]" />
                                 {slide.eyebrow}
                             </motion.p>
 
-                            <h1 className="font-display uppercase text-white leading-[0.88] tracking-[-0.03em] text-[15vw] md:text-[10vw] lg:text-[8vw] font-bold max-w-[16ch]">
+                            <h1
+                                className="font-display uppercase text-white leading-[0.9] tracking-[-0.03em] font-bold max-w-[18ch]"
+                                style={{ fontSize: "clamp(38px, 6.5vw, 92px)" }}
+                            >
                                 {slide.title.map((line, i) => (
                                     <span key={i} className="mask-line">
                                         <motion.span
