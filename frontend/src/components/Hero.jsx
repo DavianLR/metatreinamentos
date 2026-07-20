@@ -81,7 +81,7 @@ export default function Hero() {
                                 className="font-mono uppercase tracking-[0.3em] text-[11px] text-[#F4C400] mb-5 flex items-center gap-3"
                             >
                                 <span className="w-8 h-[1px] bg-[#F4C400]" />
-                                {slide.eyebrow}
+                                {slide.eyebrow.replace(/^\d+\s*[—-]\s*/, "")}
                             </motion.p>
 
                             <h1
@@ -185,16 +185,6 @@ export default function Hero() {
                         />
                     ))}
                 </div>
-                <div className="font-mono text-[11px] uppercase tracking-[0.25em] flex items-baseline gap-1">
-                    <span className="text-[#F4C400] text-lg font-display">{String(idx + 1).padStart(2, "0")}</span>
-                    <span className="opacity-40">/</span>
-                    <span className="opacity-60">{String(HERO_SLIDES.length).padStart(2, "0")}</span>
-                </div>
-            </div>
-
-            {/* Scroll indicator */}
-            <div className="absolute top-1/2 -translate-y-1/2 right-6 lg:right-16 z-20 rotate-90 origin-right hidden md:block">
-                <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/60">Scroll</span>
             </div>
         </section>
     );

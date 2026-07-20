@@ -89,7 +89,7 @@ export const TRAININGS = [
     { code: "NR 10", title: "Segurança em Serviços com Eletricidade — Básico", img: NR_IMG.n10 },
     { code: "NR 10", title: "SEP — Sistema Elétrico de Potência", img: NR_IMG.n10s },
     { code: "NR 11", title: "Operador de Máquinas Agrícolas e Equipamentos", img: NR_IMG.n11 },
-    { code: "NR 11", title: "Operador de Empilhadeira", img: NR_IMG.n11a },
+    { code: "NR 11", title: "Operador de Empilhadeira", img: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=80" },
     { code: "NR 12", title: "Segurança em Máquinas e Equipamentos", img: NR_IMG.n12 },
     { code: "NR 12", title: "Ferramentas Elétricas Manuais", img: NR_IMG.n12b },
     { code: "NR 12", title: "Motosserra", img: NR_IMG.n12c },
@@ -102,7 +102,7 @@ export const TRAININGS = [
     { code: "NR 31.12", title: "Máquinas e Implementos Agrícolas", img: NR_IMG.n3112 },
     { code: "NR 33", title: "Espaço Confinado — Trabalhador", img: NR_IMG.n33 },
     { code: "NR 33", title: "Espaço Confinado — Supervisor", img: NR_IMG.n33s },
-    { code: "NR 34", title: "Trabalho a Quente e Construção Naval", img: NR_IMG.n34 },
+    { code: "NR 34", title: "Trabalho a Quente", img: NR_IMG.n34 },
     { code: "NR 35", title: "Trabalho em Altura", img: NR_IMG.n35 },
 ];
 

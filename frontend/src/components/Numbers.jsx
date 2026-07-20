@@ -80,9 +80,6 @@ export default function Numbers() {
                             loading="lazy"
                         />
                         <div className="absolute inset-0 border border-[#111]/5" />
-                        <div className="absolute top-4 left-4 font-mono text-[10px] uppercase tracking-[0.3em] text-white bg-[#111]/80 px-3 py-1.5">
-                            IN THE FIELD · 2026
-                        </div>
                     </motion.div>
                 </div>
 
@@ -109,9 +106,6 @@ export default function Numbers() {
                             >
                                 <div className="flex items-center justify-between mb-6">
                                     <Icon size={28} strokeWidth={1.5} className="text-[#111] group-hover:text-[#F4C400] transition-colors" />
-                                    <span className="font-mono text-[10px] tracking-[0.3em] text-[#3A3A3A]">
-                                        {String(i + 1).padStart(2, "0")}
-                                    </span>
                                 </div>
                                 <div className="font-display leading-none text-[#111] mb-3" style={{ fontSize: "clamp(48px, 6vw, 84px)" }}>
                                     <Counter target={item.value} suffix={item.suffix} active={inView} />

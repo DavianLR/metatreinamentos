@@ -44,13 +44,6 @@ export default function Services() {
                             className="absolute inset-0 w-full h-full object-cover"
                             loading="lazy"
                         />
-                        <div className="absolute top-4 left-4 flex flex-col gap-1">
-                            <span className="font-mono text-[10px] tracking-[0.3em] bg-[#F4C400] text-[#111] px-2 py-1">FIELD 001</span>
-                            <span className="font-mono text-[10px] tracking-[0.3em] bg-white/90 text-[#111] px-2 py-1">AUDIT</span>
-                        </div>
-                        <div className="absolute bottom-4 right-4 h-16 w-16 border-2 border-[#F4C400] flex items-center justify-center">
-                            <span className="font-display text-white text-3xl">04</span>
-                        </div>
                     </motion.div>
 
                     {/* Right cards */}
@@ -72,9 +65,6 @@ export default function Services() {
                                         </div>
                                         <ArrowUpRight size={18} className="text-[#111]/40 group-hover:text-[#F4C400]" />
                                     </div>
-                                    <p className="font-mono text-[10px] tracking-[0.3em] text-[#3A3A3A] mb-2">
-                                        SERV — 0{i + 1}
-                                    </p>
                                     <h3 className="font-display uppercase text-2xl lg:text-3xl text-[#111] leading-tight tracking-tight">
                                         {s.code}
                                     </h3>

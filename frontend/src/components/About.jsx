@@ -22,8 +22,8 @@ export default function About() {
                     className="lg:col-span-6 relative aspect-[4/5] lg:aspect-auto lg:min-h-[720px] overflow-hidden"
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80"
-                        alt="Equipe em treinamento"
+                        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80"
+                        alt="Equipe industrial em operação"
                         className="absolute inset-0 w-full h-full object-cover"
                         loading="lazy"
                     />
@@ -64,7 +64,7 @@ export default function About() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="section-label mb-6"
                     >
-                        <span>Manifesto — Cap. {chapter.n}</span>
+                        <span>Manifesto</span>
                     </motion.p>
 
                     <div className="relative flex-1 min-h-[560px] border border-white/10 p-8 lg:p-12">
@@ -76,14 +76,13 @@ export default function About() {
                                 exit={{ opacity: 0, y: -20 }}
                                 transition={{ duration: 0.6, ease: [0.65, 0, 0.35, 1] }}
                             >
-                                <div className="chapter-numeral">{chapter.n}</div>
-                                <div className="mt-2 font-display uppercase tracking-[0.2em] text-[#F4C400] text-sm">
+                                <div className="font-display uppercase tracking-tight text-[#F4C400] leading-none" style={{ fontSize: "clamp(72px, 10vw, 160px)" }}>
                                     {chapter.label}
                                 </div>
-                                <h3 className="mt-6 font-display uppercase text-white leading-[0.95] tracking-tight" style={{ fontSize: "clamp(32px, 4vw, 56px)" }}>
+                                <h3 className="mt-8 font-display uppercase text-white leading-[0.95] tracking-tight" style={{ fontSize: "clamp(36px, 4.5vw, 64px)" }}>
                                     {chapter.title}
                                 </h3>
-                                <p className="mt-6 text-white/70 leading-relaxed max-w-lg text-base md:text-lg">
+                                <p className="mt-8 text-white/80 leading-relaxed max-w-lg text-lg md:text-xl">
                                     {chapter.body}
                                 </p>
                             </motion.div>
@@ -106,20 +105,6 @@ export default function About() {
                             >
                                 <ChevronRight size={18} />
                             </button>
-                        </div>
-
-                        <div className="absolute bottom-10 left-8 flex gap-2">
-                            {CHAPTERS.map((c, i) => (
-                                <button
-                                    key={c.n}
-                                    onClick={() => setCi(i)}
-                                    className={`font-mono text-xs tracking-widest px-2 py-1 transition-colors ${
-                                        i === ci ? "bg-[#F4C400] text-[#111]" : "text-white/50 hover:text-white"
-                                    }`}
-                                >
-                                    {c.n}
-                                </button>
-                            ))}
                         </div>
                     </div>
 
