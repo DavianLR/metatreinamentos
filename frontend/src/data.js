@@ -1,8 +1,8 @@
 // Central data for META Treinamentos website
 export const CONTACT = {
-    whatsapp: "5565999999999", // <-- Editar com número real
-    phoneDisplay: "+55 65 3299-1508",
-    phoneAlt: "+55 65 3201-2030",
+    whatsapp: "556592991608", // +55 65 9299-1608
+    phoneDisplay: "+55 65 9299-1608",
+    phoneAlt: "+55 65 2101-2092",
     email: "seguranca@metatreinamentos.com",
     address: "Nova Mutum / MT — Av. das Itaúbas 571, Nova Mutum, MT — CEP 78450-000",
     social: {
@@ -118,8 +118,11 @@ export const GALLERY = [
 ];
 
 export const PARTNERS = [
-    "AMAGGI", "SYNGENTA", "CONSTRUTORA DINIZ", "EQUILÍBRIO", "PADILHA", "FAMUTUM", "BUNGE",
-    "JBS", "CARGILL", "FERTIPAR", "ADM", "COFCO",
+    { name: "AMAGGI", logo: "/logos/amaggi.webp" },
+    { name: "Syngenta", logo: "/logos/syngenta.png" },
+    { name: "Cargill", logo: "/logos/cargill.png" },
+    { name: "Bunge", logo: "/logos/bunge.png" },
+    { name: "FVB — Faculdade Vilas Boas", logo: "/logos/fvb.png" },
 ];
 
 export const CHAPTERS = [
