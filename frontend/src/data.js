@@ -6,9 +6,9 @@ export const CONTACT = {
     email: "seguranca@metatreinamentos.com",
     address: "Nova Mutum / MT — Av. das Itaúbas 571, Nova Mutum, MT — CEP 78450-000",
     social: {
-        instagram: "https://instagram.com/metatreinamentos",
+        instagram: "https://www.instagram.com/meta_treinamentos_nm/",
         facebook: "https://facebook.com/metatreinamentos",
-        linkedin: "https://linkedin.com/company/metatreinamentos",
+        linkedin: "https://br.linkedin.com/in/rodrigo-aquino-amorim-7b873a78",
     }
 };
 
@@ -62,17 +62,17 @@ export const SERVICES = [
 
 const NR_IMG = {
     n5: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80",
-    n6: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=900&q=80",
+    n6: "/Imagens/pi.jpeg",
     n10: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=80",
     n10s: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&w=900&q=80",
-    n11: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80",
-    n11a: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=900&q=80",
-    n12: "https://images.unsplash.com/photo-1565715101841-3fa72c6adbaa?auto=format&fit=crop&w=900&q=80",
-    n12b: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=900&q=80",
-    n12c: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
-    n12d: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80",
+    n11: "/Imagens/agrico.jpeg",
+    n11a: "/Imagens/empilha.jpeg",
+    n12: "/Imagens/nr12maquinas.jpeg",
+    n12b: "/Imagens/nr12ferramentas.jpeg",
+    n12c: "/Imagens/motoserra.jpeg",
+    n12d: "/Imagens/nr12roçadeira.jpeg",
     n17: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80",
-    n20: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=900&q=80",
+    n20: "/Imagens/inflamavel.jpeg",
     n31: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80",
     n3112: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80",
     n33: "https://images.unsplash.com/photo-1649320316177-775fe2d67ca3?auto=format&fit=crop&w=900&q=80",
