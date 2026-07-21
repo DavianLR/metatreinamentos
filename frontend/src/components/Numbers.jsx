@@ -74,7 +74,7 @@ export default function Numbers() {
                         className="lg:col-span-5 relative aspect-[4/5] overflow-hidden"
                     >
                         <img
-                            src="/Imagens/nr 34.jpeg"
+                            src="/Imagens/nr34.jpeg"
                             alt="Profissional de Solda"
                             className="absolute inset-0 w-full h-full object-cover"
                             loading="lazy"
